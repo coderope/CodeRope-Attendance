@@ -1,0 +1,78 @@
+<ion-header>
+  <ion-toolbar>
+    <!-- <ion-title>Model Popup</ion-title> -->
+    <ion-buttons slot="end" (click)="closeModal()">
+      <ion-icon name="close" slot="start"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true" class="ion-text-center login_bg">
+    <div class="inner-content">
+      <div class="img-logo ion-text-center">
+        <img src="assets/img/coderope-logo-5.png" alt="">
+      </div>
+      <h1>Attendance App</h1>
+     
+        <form [formGroup]="confirmationForm" (ngSubmit)="confirmPasswordCode(confirmationForm.value)">
+            <ion-grid class="content_middle">
+                <!-- <ion-row class="logo">
+                    <ion-col size="12">
+                        <img src="assets/images/logo.png">
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col size="12">
+                        <h2 class="user_in_title">Agra Trading Logistics</h2>
+                    </ion-col>
+                    <ion-col size="12">
+                        <ion-text class="ion-text-center code">
+                            <h2 class="light-green-text">Confirmation</h2>
+                            <h2 class="light-green-text">code</h2>
+                        </ion-text>
+                    </ion-col>
+                </ion-row> -->
+                <ion-row class="pas-box">
+                    <ion-col size="3">
+                        <div class="pass">
+                            <!-- <ion-input formControlName="code_1" maxlength="1" tabindex="1" (keyup)="moveFocus($event)" placeholder=""></ion-input> -->
+                            <ion-input inputmode="char" type="char" max="string" #code_1 formControlName="code_1" maxlength="1" tabindex="1" (keyup)="moveFocus($event,code_2,'')" autofocus placeholder=""></ion-input>
+                        </div>
+                    </ion-col>
+                    <ion-col size="3">
+                        <div class="pass">
+                            <!-- <ion-input formControlName="code_2" maxlength="1" tabindex="2" (keyup)="moveFocus($event)" placeholder=""></ion-input> -->
+                            <ion-input inputmode="char" type="char" #code_2 formControlName="code_2" maxlength="1" tabindex="2" (keyup)="moveFocus($event,code_3,code_1)" placeholder=""></ion-input>
+                        </div>
+                    </ion-col>
+                    <ion-col size="3">
+                        <div class="pass">
+                            <!-- <ion-input formControlName="code_3" maxlength="1" tabindex="3" (keyup)="moveFocus($event)" placeholder=""></ion-input> -->
+                            <ion-input  type="number" inputmode="decimal" #code_3 formControlName="code_3" maxlength="1" tabindex="3" (keyup)="moveFocus($event,code_4,code_2)" placeholder=""></ion-input>
+                        </div>
+                    </ion-col>
+                    <ion-col size="3">
+                        <div class="pass">
+                            <!-- <ion-input formControlName="code_4" maxlength="1" tabindex="4" (keyup)="moveFocus($event)" placeholder=""></ion-input> -->
+                            <ion-input   type="number" inputmode="decimal" #code_4 formControlName="code_4" maxlength="1" tabindex="4" (keyup)="moveFocus($event,'',code_3)" placeholder=""></ion-input>
+                        </div>
+                    </ion-col>
+                </ion-row>
+                <ion-row class="mt-40">
+                    <ion-col size="12">
+                        <ion-button type="submit" expand="block" class="light-green-btn" [disabled]="!confirmationForm.valid  "><ion-spinner *ngIf="loading"></ion-spinner>Continue</ion-button>
+                    </ion-col>
+                </ion-row>
+                <!-- <ion-row>
+                    <ion-col size="12">
+                        <p class="need-account"><span routerLink="/sign-up">Back</span></p>
+                    </ion-col>
+                </ion-row> -->
+            </ion-grid>
+        </form>
+        
+        
+     
+    </div>
+ </ion-content>
+  
+

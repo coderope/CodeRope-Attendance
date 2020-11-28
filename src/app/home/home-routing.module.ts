@@ -6,6 +6,10 @@ const routes: Routes = [
   {
     path: '',
     component: HomePage,
+  },
+  {
+    path: 'modelpop',
+    loadChildren: () => import('./modelpop/modelpop.module').then( m => m.ModelpopPageModule)
   }
 ];
 
