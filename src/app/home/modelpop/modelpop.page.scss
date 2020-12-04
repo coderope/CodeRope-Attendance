@@ -65,10 +65,7 @@ button.custom-button {
       color: white;
       filter: drop-shadow(2px 4px 6px black);
   }
-  .header-ios ion-toolbar:last-of-type {
-    --border-width: 0 0 0.55px;
-    --background: #327dc0;
-}
+ 
 // .rounded {
 //     width: 100%;
 //     height: 100px;
@@ -164,5 +161,16 @@ ion-input{
 }
 ion-spinner{
     text-align: center;
+}
+.header-ios ion-toolbar:last-of-type {
+    --border-width: 0 0 0.55px;
+    --background: #327dc0;
+}
+.toolbar-container {
+    padding-left: unset;
+    padding-right: unset;
+    padding-inline-start: var(--padding-start);
+    padding-inline-end: var(--padding-end);
+    background: #327dc1;
 }
 

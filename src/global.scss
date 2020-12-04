@@ -33,14 +33,31 @@ ion-toolbar {
     padding-inline-end: var(--padding-end);
     background: #327dc0;
 }
-// .native-input.sc-ion-input-ios {
-//     background: #fff ;
-//     border:1px solid #327dc0; 
-//     border-radius: 10px;
-//     padding-left: unset;
-//     padding-right: unset;
-//     -webkit-padding-start: var(--padding-start);
-//     padding-inline-start: var(--padding-start);
-//     -webkit-padding-end: var(--padding-end);
-//     padding-inline-end: var(--padding-end);
-// }
+
+
+    .toolbar-container {
+        padding-left: unset;
+        padding-right: unset;
+        padding-inline-start: var(--padding-start);
+        padding-inline-end: var(--padding-end);
+        background: rgb(50, 125, 192);
+    }
+
+.toolbar-background {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    position: absolute;
+    transform: translateZ(0px);
+    border-width: var(--border-width);
+    border-style: var(--border-style);
+    border-color: var(--border-color);
+    background: var(--background);
+    contain: strict;
+    opacity: var(--opacity);
+    z-index: -1;
+    pointer-events: none;
+}
+
+
