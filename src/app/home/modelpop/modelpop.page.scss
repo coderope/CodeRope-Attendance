@@ -139,10 +139,10 @@ ion-grid {
     text-transform: capitalize;
 }
 .pass {
-    color: #fff;
+    color: rgb(78, 74, 74);
     margin: auto;
     text-align: center;
-    border: 1px solid #fff;
+    border: 1px solid  rgb(78, 74, 74);
     border-radius: 10px;
     font-size: 22px;
     font-family: OpenSans;
@@ -158,6 +158,9 @@ ion-grid {
 
 ion-input{
     text-transform: uppercase;
+    /* background: navajowhite; */
+    background: white;
+    border-radius: 20%;
 }
 ion-spinner{
     text-align: center;
