@@ -47,9 +47,8 @@ ion-content {
     width: 280px;
     margin: auto;
     position: relative;
-    box-shadow: 5px 7px 11px #327dc0;
     border-radius: 50%;
-    box-shadow: 10px 17px 22px #327ec0
+    box-shadow: 6px 11px 14px #212529;
  }
 }
 h2 {
@@ -62,6 +61,7 @@ h2 {
   margin-top: 20px;
     font-size: 34px;
     font-weight: 600;
-    color: white;
-    filter: drop-shadow(2px 4px 6px black);
+    color: #000000;
+    filter: drop-shadow(3px 3px 1px #ccc);
+
 }

@@ -1,3 +1,12 @@
+
+ion-header{
+    ion-toolbar{
+        ion-icon{
+            color: #fff;
+        }
+    }
+}
+
 button.custom-button {
     text-align: center;
     position: relative;
@@ -157,6 +166,7 @@ ion-input{
     text-transform: uppercase;
     /* background: navajowhite; */
     background: white;
+    --background: white;
     border-radius: 20%;
 }
 ion-spinner{
